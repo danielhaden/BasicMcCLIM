@@ -1,0 +1,10 @@
+||| Command Loop |||
+1. Command is acquired.
+2. Arguments are acquired.
+3. Command called on the arguments
+4. A display routine is called to update the views
+
+||| Reloading Packages |||
+(cl:delete-package :abc)
+(cl:unexport 'abc:c :abc)
+(asdf:load-system :abc :force t)
